@@ -1,0 +1,6 @@
+[~/]
+.tmux
+.tmux.conf
+.gitconfig
+[/usr/share/vim]
+vimrc
