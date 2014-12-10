@@ -25,7 +25,7 @@ do
         complete_path="$current_path$LINE"
         echo $complete_path
         cp -r $complete_path "$complete_path.bak"
-        ln -sfnv "$DIR/$LINE" $complete_path
+        ln -sfn "$DIR/$LINE" $complete_path
     fi
 
     let count++

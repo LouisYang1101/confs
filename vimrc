@@ -3,12 +3,13 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
-
 Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
+call vundle#end()
 
 nmap <F2> :NERDTreeToggle <CR>
 
@@ -25,9 +26,9 @@ au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
 " Don't write backup file if vim is being called by "chpass"
 au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
-syntax on
 filetype plugin indent on 
 
+syntax on
 set expandtab
 set shiftwidth=4
 set softtabstop=4
@@ -36,3 +37,4 @@ set number
 set cindent
 set autoindent
 
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
