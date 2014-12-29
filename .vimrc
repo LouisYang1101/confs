@@ -2,16 +2,18 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
+ set rtp+=~/.vim/bundle/Vundle.vim/
+ call vundle#begin()
 
 " let Vundle manage Vundle, required
-" Bundle 'gmarik/vundle'
-Bundle 'scrooloose/nerdtree'
+ Bundle 'gmarik/vundle'
+ Bundle 'scrooloose/nerdtree'
 " Bundle 'kien/ctrlp.vim'
-call vundle#end()
+ call vundle#end()
 
 nmap <F2> :NERDTreeToggle <CR>
+
+let NERDTreeDirArrows=0
 
 " Configuration file for vim
 set modelines=0		" CVE-2007-2438
@@ -36,5 +38,7 @@ set tabstop=4
 set number
 set cindent
 set autoindent
+set fileencoding=utf-8
+set enc=utf-8
 
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
