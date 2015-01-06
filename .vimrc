@@ -8,10 +8,12 @@ filetype off                  " required
 " let Vundle manage Vundle, required
  Bundle 'gmarik/vundle'
  Bundle 'scrooloose/nerdtree'
+ Bundle 'jistr/vim-nerdtree-tabs'
 " Bundle 'kien/ctrlp.vim'
  call vundle#end()
 
 nmap <F2> :NERDTreeToggle <CR>
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
 let NERDTreeDirArrows=0
 
