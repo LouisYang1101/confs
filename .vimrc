@@ -6,14 +6,29 @@ filetype off                  " required
  call vundle#begin()
 
 " let Vundle manage Vundle, required
+" Bundle 'ervandew/supertab'
+" Bundle 'kien/ctrlp.vim'
+ Bundle 'Shougo/vimproc'
+ Bundle 'Shougo/unite.vim'
+ Bundle 'm2mdas/phpcomplete-extended'
  Bundle 'gmarik/vundle'
  Bundle 'scrooloose/nerdtree'
  Bundle 'jistr/vim-nerdtree-tabs'
-" Bundle 'kien/ctrlp.vim'
+ Bundle 'SirVer/ultisnips'
+ Bundle 'honza/vim-snippets'
  call vundle#end()
 
 nmap <F2> :NERDTreeToggle <CR>
-map <Leader>n <plug>NERDTreeTabsToggle<CR>
+nmap <F3> :NERDTreeTabsToggle<CR>
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets = '<C-Tab>'
+let g:UltiSnipsJumpForwardTrigger = '<Tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
+let g:phpcomplete_index_composer_command = 'composer'
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
 let NERDTreeDirArrows=0
 
