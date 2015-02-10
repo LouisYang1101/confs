@@ -7,7 +7,7 @@
     name = louisyang
     email = louisyang@kkbox.com
 [core]
-	autocrlf = true
+	autocrlf = input
 	safecrlf = warn
 	editor = /usr/bin/vim
 [color]
