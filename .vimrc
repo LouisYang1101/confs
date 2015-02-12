@@ -16,6 +16,7 @@ filetype off                  " required
  Bundle 'jistr/vim-nerdtree-tabs'
  Bundle 'SirVer/ultisnips'
  Bundle 'honza/vim-snippets'
+ Bundle 'bronson/vim-trailing-whitespace'
  call vundle#end()
 
 nmap <F2> :NERDTreeToggle <CR>
